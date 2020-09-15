@@ -208,5 +208,3 @@ BUILD SUCCESSFUL in 2s
 9 actionable tasks: 5 executed, 4 up-to-date
 ```
 ここまででビルドの完了です
-
-## Test
