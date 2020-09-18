@@ -12,7 +12,7 @@ gradle init
 # build script DSL -> 2
 ```
 
-[Gradle init](https://firebasestorage.googleapis.com/v0/b/storage-ui.appspot.com/o/1600170031133?alt=media&token=23094721-0cfe-49a3-ac5a-f5b78f4cb61a)
+![Gradle init](https://firebasestorage.googleapis.com/v0/b/storage-ui.appspot.com/o/1600170031133?alt=media&token=23094721-0cfe-49a3-ac5a-f5b78f4cb61a)
 
 ### build.gradle.ktsの記述
 マルチプロジェクトでは、可能な限りトップレベルのビルドスクリプトに共通設定を設定し、個別の設定のみサブプロジェクトに記述するようにします。
@@ -92,11 +92,22 @@ class GreetingFormatter {
 
 ## Spock Frameworkを利用してtest(GreetingFormatterSpec)を作成します
 
-**`greeting-library/src/test/groovy/greeter/GreetingFormatterSpec.groovy
-`**
+*`src/test/groovy/greeter/GreetingFormatterSpec.groovy`*
 
-```kotlin
+```groovy
+package greeter
 
+import spock.lang.Specification
+
+class GreetingFormatterSpec extends Specification {
+
+    def 'Creating a greeting'() {
+
+        expect: 'The greeting to be correctly capitalized'
+        GreetingFormatter.greeting('gradlephant') == 'Hello, Gradlephant'
+
+    }
+}
 ```
 
 ## ビルド
