@@ -219,3 +219,7 @@ BUILD SUCCESSFUL in 2s
 9 actionable tasks: 5 executed, 4 up-to-date
 ```
 ここまででビルドの完了です
+
+
+## Links
+- [Creating Multi-project Builds](https://guides.gradle.org/creating-multi-project-builds/)
