@@ -10,3 +10,6 @@ allprojects {
         jcenter()
     }
 }
+tasks.register("task1") {
+    println("start")
+}

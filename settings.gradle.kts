@@ -7,7 +7,7 @@
  * in the user manual at https://docs.gradle.org/6.3/userguide/multi_project_builds.html
  */
 
-rootProject.name = "gradle-learning"
+rootProject.name = "gradle-multi-project"
 
 include("subproject")
 include("subproject2")
